@@ -6,7 +6,7 @@
     <groupId>com.example.test</groupId>
     <artifactId>test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
