@@ -6,26 +6,17 @@
     <groupId>com.example.test</groupId>
     <artifactId>test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
-
     <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-<!--        <mapstruct.version>1.4.2.Final</mapstruct.version>-->
         <lombok.version>1.18.24</lombok.version>
         <mockito.version>4.4.0</mockito.version>
         <maven.compiler.version>3.10.1</maven.compiler.version>
     </properties>
 
         <dependencies>
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-dependencies</artifactId>-->
-<!--                <version>2.6.6</version>-->
-<!--                <type>pom</type>-->
-<!--            </dependency>-->
             <dependency>
                 <groupId>fr.xebia.extras</groupId>
                 <artifactId>selma-processor</artifactId>
@@ -42,17 +33,6 @@
                 <artifactId>spring-tx</artifactId>
                 <version>5.3.22</version>
             </dependency>
-
-<!--            <dependency>-->
-<!--                <groupId>org.mapstruct</groupId>-->
-<!--                <artifactId>mapstruct</artifactId>-->
-<!--                <version>${mapstruct.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>org.mapstruct</groupId>-->
-<!--                <artifactId>mapstruct-processor</artifactId>-->
-<!--                <version>${mapstruct.version}</version>-->
-<!--            </dependency>-->
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-inline</artifactId>
@@ -71,84 +51,14 @@
             </dependency>
         </dependencies>
 
-
-
-
-
     <build>
         <pluginManagement>
             <plugins>
-<!--                <plugin>-->
-<!--                    <groupId>org.apache.maven.plugins</groupId>-->
-<!--                    <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                    <version>${maven.compiler.version}</version>-->
-<!--                    <configuration>-->
-<!--                        <release>11</release>-->
-<!--                        <annotationProcessorPaths>-->
-<!--                            <path>-->
-<!--                                <groupId>org.projectlombok</groupId>-->
-<!--                                <artifactId>lombok</artifactId>-->
-<!--                                <version>${lombok.version}</version>-->
-<!--                            </path>-->
-<!--                            <path>-->
-<!--                                <groupId>org.projectlombok</groupId>-->
-<!--                                <artifactId>lombok-mapstruct-binding</artifactId>-->
-<!--                                <version>0.2.0</version>-->
-<!--                            </path>-->
-<!--                            <path>-->
-<!--                                <groupId>org.mapstruct</groupId>-->
-<!--                                <artifactId>mapstruct-processor</artifactId>-->
-<!--                                <version>${mapstruct.version}</version>-->
-<!--                            </path>-->
-<!--                        </annotationProcessorPaths>-->
-<!--                        <compilerArgs>-->
-<!--                            <compilerArg>-->
-<!--                                &#45;&#45;enable-preview-->
-<!--                            </compilerArg>-->
-<!--                            <compilerArg>-->
-<!--                                -Amapstruct.suppressGeneratorTimestamp=true-->
-<!--                            </compilerArg>-->
-<!--                            <compilerArg>-->
-<!--                                -Amapstruct.suppressGeneratorVersionInfoComment=true-->
-<!--                            </compilerArg>-->
-<!--                            <compilerArg>-->
-<!--                                -Amapstruct.unmappedTargetPolicy=ERROR-->
-<!--                            </compilerArg>-->
-<!--                            <compilerArg>-->
-<!--                                -Amapstruct.defaultComponentModel=spring-->
-<!--                            </compilerArg>-->
-<!--                        </compilerArgs>-->
-<!--                    </configuration>-->
-<!--                </plugin>-->
-<!--                <plugin>-->
-<!--                    <groupId>org.apache.maven.plugins</groupId>-->
-<!--                    <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                    <version>${maven.surefire.version}</version>-->
-<!--                    <configuration>-->
-<!--                        <argLine>&#45;&#45;enable-preview</argLine>-->
-<!--                    </configuration>-->
-<!--                </plugin>-->
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>2.7.2</version>
                 </plugin>
-<!--                <plugin>-->
-<!--                    <groupId>org.codehaus.mojo</groupId>-->
-<!--                    <artifactId>build-helper-maven-plugin</artifactId>-->
-<!--                    <version>${maven.build.helper.version}</version>-->
-<!--                </plugin>-->
-<!--                <plugin>-->
-<!--                    <groupId>com.mysema.maven</groupId>-->
-<!--                    <artifactId>apt-maven-plugin</artifactId>-->
-<!--                    <version>${maven.querydsl.version}</version>-->
-<!--                    <configuration>-->
-<!--                        <compilerOptions>-->
-<!--                            <source>${java.version}</source>-->
-<!--                            <deprecation>&#45;&#45;enable-preview</deprecation>-->
-<!--                        </compilerOptions>-->
-<!--                    </configuration>-->
-<!--                </plugin>-->
             </plugins>
         </pluginManagement>
     </build>
